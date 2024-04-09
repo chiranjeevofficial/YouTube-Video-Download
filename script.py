@@ -12,8 +12,8 @@ print(
     'Length:',video_obj.length,'seconds'
 )
 
-video_streams = list(enumerate(video_obj.streams.filter(only_video=True))) 
 print("\nVideo Streams Fetching...")
+video_streams = list(enumerate(video_obj.streams.filter(only_video=True))) 
 stream_data = []
 for index, stream in video_streams:
     mime_type_parts = stream.mime_type.split('/')
